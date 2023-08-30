@@ -6,19 +6,19 @@ let num = ref(0)
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark boder-bottom border-body">
+  <nav class="navbar navbar-expand-lg navbar-dark boder-bottom border-body" style="background-color: red;">
     <div class="container-fluid">
-      <router-link to="/" class="navbar-brand">Pokedex</router-link>
+      <router-link style="font-weight: bold;" to="/" class="navbar-brand">Pokedex</router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link to="/" class="nav-link" aria-current="page">Home</router-link>
+            <router-link style="color: white; font-weight: 500;" to="/" class="nav-link" aria-current="page">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/about" class="nav-link">About</router-link>
+            <router-link style="color: white; font-weight: 500;" to="/about" class="nav-link">About</router-link>
           </li>
         </ul>
       </div>
@@ -29,14 +29,14 @@ let num = ref(0)
     <router-view></router-view>
   </div>
 
-  <footer class="bg-dark text-light">
-    <div> Unimar | ADS | {{ new Date().getFullYear() }}</div>
+  <footer style="background-color: red;" class="text-light">
+    <div> Marcelo-maga {{ new Date().getFullYear() }}</div>
   </footer>
 
 </template>
 
 <style>
-footer{
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
